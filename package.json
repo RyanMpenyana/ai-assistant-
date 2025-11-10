@@ -2,9 +2,15 @@
   "name": "backend-app",
   "version": "0.0.0",
   "private": true,
+  "description": "",
+  "main": "app.js",
+  "type": "module",
   "scripts": {
-    "start": "node ./bin/www env-file=.env"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./bin/www --env-file=.env"
   },
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
@@ -12,6 +18,12 @@
     "express": "^4.21.2",
     "http-errors": "~1.6.3",
     "jade": "^0.29.0",
-    "morgan": "^1.10.1"
+    "morgan": "^1.10.1",
+    "@google/genai": "^1.28.0",
+    "@google/generative-ai": "^0.24.1",
+    "openai": "^6.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
   }
 }
